@@ -1,5 +1,98 @@
 @charset "utf-8";
 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+   font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+
 body{
     margin: 0px;
 }
@@ -11,15 +104,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 4%;
 }
-
 #logo h1{
     background-color: rgb(40, 40, 41);
     color: white;
-    padding: 2px 20px;
+    padding: 5px 20px;
     font-size: 23px;
     margin: 10px 50px;
 }
@@ -58,7 +150,7 @@ margin-right: 10px;
 #about{
     margin: 0 auto 100px auto;
     padding: 0 4%;
-    width: 960px;
+    max-width: 960px;
     justify-content: space-between;
 }
 #about-1{
@@ -93,7 +185,7 @@ margin-right: 10px;
 }
 #bicycle{
     margin-bottom: 100px;
-    width: 960px;
+    max-width: 960px;
     justify-content: space-between;
     margin: 0 auto 100px auto;
     padding: 0 4%;
@@ -109,13 +201,11 @@ font-size: 32px;
 color: #383e45;
 }
 #bicycle-2 ul{
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content:center
+    justify-content:space-between;
 }
 #bicycle-2 li img{
-    width: 235px;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -131,29 +221,28 @@ color: #383e45;
     margin: 10px 0;
 }
 #bicycle-2 li{
-    margin-right: 15px;
+    width: 32%;
 }
 footer{
     font-size: 11px;
     color:#383e45;
 }
 @media screen and (max-width:600px){
-    header{
-        max-width: 600px;
-        margin: 0;
-        padding: 0;
-    }
     #logo h1{
         margin-left: 1px;
     }
     #main-visual{
-        width: 600px;
         height: 950px;
     }
     #about{
         display: block;
-        width: auto;
         text-align: center;
+        margin: 0;
+        padding: 070;
+    }
+    #about-text span{
+        display: block;
+        margin-right: 260px;
     }
     #about-2{
         display: block;
@@ -162,22 +251,15 @@ footer{
         margin: 0;
     }
     #about-text h3{
-        margin-right: 235px;
-    }
-    #bicycle{
-        width: 600px;
-        margin: 0;
-        padding: 0;
+        margin-right: 170px;
     }
     #bicycle-2 ul{
         display: block;
         text-align: center;
     }
     #bicycle-2 li{
+        width: auto;
         margin: 0;
-    }
-    #bicycle-2 li img{
-        width: 100%;
     }
     footer{
         margin-top: 100px;
