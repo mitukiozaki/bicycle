@@ -175,9 +175,13 @@ margin-right: 10px;
     justify-content: center;
     align-items: center;
 }
+#about-text{
+    display: inline-block;
+}
 #about-text h3{
     font-size: 16px;
     color: #383e45;
+    float: left;
 }
 #about-text p{
     font-size: 14.4px;
@@ -237,8 +241,6 @@ footer{
     #about{
         display: block;
         text-align: center;
-        margin: 0;
-        padding: 070;
     }
     #about-text span{
         display: block;
@@ -251,7 +253,7 @@ footer{
         margin: 0;
     }
     #about-text h3{
-        margin-right: 170px;
+        float:left
     }
     #bicycle-2 ul{
         display: block;
